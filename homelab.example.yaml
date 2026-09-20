@@ -1,0 +1,8 @@
+services:
+  shortener:
+    image: ghcr.io/ertugruldasgin/shortener:v0.3.0
+    ports:
+      - "8082:8080"
+    env:
+      DATABASE_URL: postgres://...
+    restart: always

@@ -8,6 +8,11 @@
 *.so
 *.dylib
 
+# Build output
+/reconciler
+cmd/reconciler/reconciler
+/bin/
+
 # Test binary, built with `go test -c`
 *.test
 
@@ -17,16 +22,22 @@ coverage.*
 *.coverprofile
 profile.cov
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
 # Go workspace file
 go.work
 go.work.sum
 
 # env file
 .env
+!.env.example
 
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Config file
+homelab.yaml
+*.local.yaml
+!homelab.example.yaml
